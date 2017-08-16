@@ -1,0 +1,102 @@
+/** Customize the canvas */
+#example .demo-container {
+	width: 544px;
+	padding: 21px 32px 31px 63px;
+	background: url( "images/qsfBackground.png" ) 0 0 no-repeat;
+	position: relative;
+}
+
+
+/** header */
+.demo-container .header {
+	margin-bottom: 18px;
+	border-bottom: 1px solid #8bc0c9;
+	color: #48a0b0;
+	font: 24px 'Segoe UI', sans-serif;
+	text-transform: uppercase;
+}
+
+
+/* Customize DropDownTree position*/
+.demo-container .address-dropdown {
+	position: absolute;
+	top: 75px;
+	left: 65px;
+}
+
+
+/** Conversation window */
+.demo-container .converesation-window {
+	width: 265px;
+	color: #767676;
+	float: right;
+}
+
+	/** template photo */
+	.demo-container .converesation-window #image-placeholder {
+		width: 90px;
+		height: 110px;
+		margin-right: 10px;
+		margin-bottom: 19px;
+		border: 2px solid #8bc0c9;
+		background: url("images/default.png") no-repeat scroll center center #FFFFFF;
+		display: block;
+		float: left;
+	}
+	/** target IE6 and IE7 */
+	@media screen\9 {
+		.demo-container .converesation-window #image-placeholder{
+			margin-bottom: 0;
+		}
+	} 
+
+	/** Name */
+	.demo-container .converesation-window .name {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+
+	/** Mail & Phone */
+	.demo-container .converesation-window ul {
+		margin: 20px 0 15px;
+		padding: 0;
+		border-top: 1px solid #cccccc;
+		list-style: none;
+		clear: both;
+	}
+	.demo-container .converesation-window li {
+		padding: 10px 0;
+		border-bottom: 1px solid #cccccc;
+	}
+
+
+	/** Buttons */
+	.demo-container .buttons {}
+	.demo-container .buttons .RadButton {
+		font-size: 12px;
+		padding: 5px 8px 5px 5px;
+		border: 1px solid #c9c9c9;
+	}
+	.demo-container .buttons .RadButton input{
+		padding-left: 25px;
+	}
+	.demo-container .buttons .RadButton.rbDisabled {
+		border: 1px solid #c9c9c9;
+	}
+	.demo-container .buttons .RadButton .rbDecorated {
+		text-transform: uppercase;
+	}
+		/** e-mail button */
+		html .demo-container .buttons .send-message input{
+			background: url('images/e-mail.png') 0 3px no-repeat;
+		}
+
+		/** Call button */
+		html .demo-container .buttons .make-call {
+			margin-left: 4px;
+		}
+		html .demo-container .buttons .make-call input{
+			background: url('images/call.png') left 3px no-repeat;
+		}
